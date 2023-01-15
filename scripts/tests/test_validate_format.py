@@ -133,6 +133,8 @@ class TestValidadeFormat(unittest.TestCase):
 
         self.assertIsInstance(err_msgs, list)
         self.assertEqual(len(err_msgs), 1)
+        test_if_check_alphabetical_order_return_correct_msg_error(self):
+            
         
         err_msg = err_msgs[0]
         expected_err_msg = '(L001) Title syntax should be "[TITLE](LINK)"'
